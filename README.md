@@ -55,12 +55,6 @@ Through this project, I practiced:
 - Working with browser URL hashes and navigation.
 - Organizing a simple front-end project.
 
-## 👨‍💻 Author
 
-**Jaafar Jaafar**
-
-- GitHub: [@jaafarjab77-tech](https://github.com/jaafarjab77-tech)
-
----
 
 ⭐ If you find this project useful, consider giving it a star!
