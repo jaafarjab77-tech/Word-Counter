@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordCounter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <span>Word<span class="purple">Counter</span></span>
+        </a>
+
+        <nav>
+            <a href="#home" class="nav-link active" data-section="home">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <i class="fa-solid fa-circle-info"></i> About
+            </a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="page-section active">
+        <main class="container">
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span class="chart-icon">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </span>
+                </div>
+
+                <div class="hero-content">
+                    <h1>Word <span>Counter</span></h1>
+                    <p>Count words, characters and more — instantly!</p>
+                </div>
+            </section>
+
+            <!-- Main Counter -->
+            <section class="counter-layout">
+
+                <!-- Text Editor -->
+                <div class="editor-card">
+
+                    <div class="editor-header">
+                        <div class="editor-label">
+                            <span class="edit-icon">
+                                <i class="fa-solid fa-pen"></i>
+                            </span>
+                            <span>Enter or paste your text here...</span>
+                        </div>
+
+                        <button class="clear-btn" id="clearBtn">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Clear
+                        </button>
+                    </div>
+
+                    <textarea
+                        id="textInput"
+                        placeholder="Start typing... or paste your content to count words and characters."
+                    ></textarea>
+
+                </div>
+
+                <!-- Statistics -->
+                <aside class="stats-panel">
+
+                    <div class="stat-card">
+                        <div class="stat-icon words-icon">
+                            <i class="fa-solid fa-w"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p>Words</p>
+                            <h2 id="wordCount">0</h2>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon characters-icon">
+                            <i class="fa-solid fa-a"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p>Characters</p>
+                            <h2 id="characterCount">0</h2>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </section>
+
+            <!-- Features -->
+            <section class="features">
+
+                <div class="feature">
+                    <i class="fa-solid fa-bolt feature-icon purple-icon"></i>
+                    <div>
+                        <h3>Instant Results</h3>
+                        <p>Get counts in real-time</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-shield-halved feature-icon green-icon"></i>
+                    <div>
+                        <h3>100% Free</h3>
+                        <p>No registration needed</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-desktop feature-icon blue-icon"></i>
+                    <div>
+                        <h3>Works Everywhere</h3>
+                        <p>On any device</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="page-section">
+        <main class="container">
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="chart-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </span>
+                </div>
+
+                <div class="hero-content">
+                    <h1>About <span>WordCounter</span></h1>
+                    <p>Simple, fast, and free word counting tool</p>
+                </div>
+            </section>
+
+            <!-- About Content -->
+            <section class="about-content">
+
+                <div class="about-card">
+                    <div class="about-header">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h2>Our Purpose</h2>
+                    </div>
+                    <p>
+                        WordCounter is a free online tool designed to help writers, students, professionals, 
+                        and anyone who needs to count words and characters quickly and accurately. Whether 
+                        you're working on an essay, article, social media post, or any text-based content, 
+                        our tool provides instant, real-time counting to help you stay within your limits 
+                        and meet your goals.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-header">
+                        <i class="fa-solid fa-star"></i>
+                        <h2>Key Features</h2>
+                    </div>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>Real-Time Counting</strong>
+                                <p>Get instant word and character counts as you type</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>No Registration Required</strong>
+                                <p>Start using it immediately without creating an account</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>Privacy Focused</strong>
+                                <p>Your text stays on your device - we don't store or collect anything</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>100% Free</strong>
+                                <p>No hidden fees, no premium plans - completely free forever</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>Works Everywhere</strong>
+                                <p>Use it on any device - desktop, tablet, or mobile</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <strong>Clean Interface</strong>
+                                <p>Simple, distraction-free design that lets you focus on your writing</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-header">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h2>How to Use</h2>
+                    </div>
+                    <ol class="steps-list">
+                        <li>
+                            <span class="step-number">1</span>
+                            <div>
+                                <strong>Type or Paste Your Text</strong>
+                                <p>Enter your text directly into the text area or paste it from another source</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">2</span>
+                            <div>
+                                <strong>Watch the Counts Update</strong>
+                                <p>The word and character counts update automatically as you type</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">3</span>
+                            <div>
+                                <strong>Clear When Done</strong>
+                                <p>Click the "Clear" button to reset everything and start fresh</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-header">
+                        <i class="fa-solid fa-users"></i>
+                        <h2>Who It's For</h2>
+                    </div>
+                    <div class="audience-grid">
+                        <div class="audience-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Students</h3>
+                            <p>Meet essay and assignment word count requirements</p>
+                        </div>
+                        <div class="audience-item">
+                            <i class="fa-solid fa-pen-fancy"></i>
+                            <h3>Writers</h3>
+                            <p>Track article and story length for submissions</p>
+                        </div>
+                        <div class="audience-item">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h3>Professionals</h3>
+                            <p>Create reports and documents within limits</p>
+                        </div>
+                        <div class="audience-item">
+                            <i class="fa-solid fa-hashtag"></i>
+                            <h3>Social Media</h3>
+                            <p>Stay within character limits for posts and tweets</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Ready to Start Counting?</h2>
+                    <p>Try our word counter tool now - it's fast, free, and easy to use!</p>
+                    <a href="#home" class="cta-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Go to Word Counter
+                    </a>
+                </div>
+            </section>
+
+        </main>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
